@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vidéo 1</title>
+        <style>
+            @import 'styles/header.css';
+
+            :root {
+                -webkit-user-select : none;
+                -moz-user-select    : none;
+                -ms-user-select     : none;
+                user-select         : none;
+            }
+
+            body {
+                margin    : 0;
+                font-size : 0;
+            }
+
+            body > main > header > span {
+                left : 5%;
+            }
+
+            body > main > header > a > img {
+                left : 5%;
+            }
+
+            body > main > article {
+                background-color : #1E2023;
+                height           : calc(100% - 92px);
+                font-size        : 16px;
+                padding-top      : 10px;
+                width            : 100%;
+            }
+
+            body > main > article > section {
+                position         : relative;
+                margin           : 25px;
+                width            : 55%;
+                height           : 450px;
+                background-color : #2A2D31;
+                color            : #CCC;
+                display          : inline-block;
+            }
+
+            body > main > article:nth-of-type(2n + 1) {
+                padding-left : 10%;
+            }
+
+            body > main > article:nth-of-type(2n + 2) {
+                padding-left : 35%;
+            }
+
+            body > main > article > section > p {
+                padding    : 30px;
+                text-align : justify;
+            }
+
+            body > main > article > section > img {
+                width         : 60%;
+                height        : 60%;
+                border-radius : 2%;
+            }
+
+            body > main > article:nth-of-type(2n + 1) > img {
+                padding-left : 30px;
+            }
+
+            body > main > article:nth-of-type(2n + 2) > img {
+                padding-left : 35%;
+            }
+
+            body > main > article > aside > button {
+                position : absolute;
+                bottom   : 0;
+                left     : -120px;
+            }
+
+            body > main > article > section:nth-of-type(2n + 1) > button {
+                right : 0;
+            }
+
+            body > main > article > section:nth-of-type(2n + 2) > button {
+                left : 0;
+            }
+
+            aside {
+                font-size        : 16px;
+                color            : white;
+                width            : 23.5%;
+                position         : relative;
+                vertical-align   : top;
+                background-color : #F2374D;
+                margin-top       : 25px;
+                height           : 450px;
+                overflow         : hidden;
+                transition       : .4s;
+                display          : none;
+            }
+
+            article:nth-of-type(2n + 2) > aside {
+                position : absolute;
+                left     : 8.5%;
+                width    : 23.5%;
+            }
+
+            article {
+                position   : relative;
+                transition : .4s;
+            }
+
+            aside.minimize {
+                display    : inline-block;
+                transition : .4s;
+            }
+
+            aside.minimize + button::before {
+                content    : 'Réduire (-)';
+                transition : .4s;
+            }
+
+            label {
+                display : block;
+            }
+
+            label > input {
+                float : right;
+            }
+
+            button {
+                vertical-align : top;
+                width          : 150px;
+                height         : 20px;
+                line-height    : 20px;
+                border         : 1px solid #057;
+                padding        : 0;
+                background     : transparent;
+                cursor         : pointer;
+                outline        : none;
+                position       : absolute;
+                z-index        : 1;
+            }
+
+            article > button {
+                top  : 465px;
+                left : 57%;
+            }
+
+            button::before {
+                content : 'En savoir plus (+)';
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+
+            <header>
+                <h2> Vidéo 1 </h2>
+                <a href="index.html"><img src="index/logo.png"/></a>
+                <span> HOME </span>
+            </header>
+            <article>
+                <section>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta
+                        ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? </p>
+                    <img src="apex.jpg"/>
+                </section>
+                <aside>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </aside><button type="button"></button>
+            </article>
+            <!--<button> Fiche récap</button>-->
+            <article>
+                <aside>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </aside><button type="button"></button>
+                <section>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta
+                        ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? </p>
+                    <img src="apex.jpg"/>
+                </section>
+            </article>
+            <article>
+                <section>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta
+                        ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? </p>
+                    <img src="apex.jpg"/>
+                </section>
+                <aside>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </aside><button type="button"></button>
+            </article>
+            <article>
+                <section>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta
+                        ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? </p>
+                    <img src="apex.jpg"/>
+                </section>
+                <aside>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </aside><button type="button"></button>
+            </article>
+            <article>
+                <section>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dicta
+                        ea fuga, in
+                        ullam vitae. Ad autem blanditiis doloremque facere id ipsam ipsum libero, mollitia placeat qui
+                        rem tenetur? </p>
+                    <img src="apex.jpg"/>
+                </section>
+                <aside>
+                    <ul>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ul>
+                </aside><button type="button"></button>
+            </article>
+
+        </main>
+        <script>
+
+            const btns = document.querySelectorAll('aside+button');
+            Array.from(btns).forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    console.log(this, this.previousSibling);
+                    this.previousSibling.classList.toggle('minimize');
+                });
+            });
+
+        </script>
+    </body>
+</html>

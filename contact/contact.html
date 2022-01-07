@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <style>
+            @import '../styles/header.css';
+
+            :root {
+                -webkit-user-select : none;
+                -moz-user-select    : none;
+                -ms-user-select     : none;
+                user-select         : none;
+                font-family         : "adelle-sans", "helvetica neue", "helvetica", sans-serif;
+            }
+
+            * {
+                box-sizing : border-box;
+            }
+
+            body {
+                margin    : auto;
+                font-size : 0;
+            }
+
+            body > main > article {
+                position         : relative;
+                font-size        : 16px;
+                width            : 100%;
+                min-height       : calc(100vh - 92px);
+                background-color : #1E2023;
+            }
+
+            body > main > article > form {
+                position   : absolute;
+                left       : 50%;
+                top        : 13%;
+                width      : 35%;
+                font-size  : 16px;
+                border     : 5px solid #2A2D31;
+                padding    : 20px;
+                color      : #CCC;
+                border-top : none;
+            }
+
+            body > main > article > form > input, body > main > article > form > textarea {
+                width            : 95%;
+                max-height       : 100px;
+                padding          : 8px 5px;
+                margin           : 10px;
+                outline          : none;
+                border           : none;
+                border-bottom    : 1px solid black;
+                font-size        : 16px;
+                font-family      : "adelle-sans", "helvetica neue", "helvetica", sans-serif;
+                background-color : #1E2023;
+                color            : #727A88;
+            }
+
+            body > main > article > form > input:focus, body > main > article > form > textarea:focus {
+                border-bottom : 1px solid #CCC;
+            }
+
+            body > main > article > form > textarea {
+                min-height : 50px;
+                max-height : 150px;
+                min-width  : 150px;
+                max-width  : 95%;
+            }
+
+            body > main > article > form > label {
+                margin-left : 10px;
+            }
+
+            body > main > article > h3 {
+                position       : absolute;
+                top            : 40%;
+                left           : 35%;
+                transform      : translate(-75%, -70%);
+                color          : #F2374D;
+                font-size      : 100px;
+                text-transform : uppercase;
+                font-weight    : 700;
+            }
+
+            body > main > article > form > h3 {
+                font-size : 16px;
+                color     : #727A88;
+                margin    : 0;
+                position  : absolute;
+                top       : -8px;
+                left      : 50%;
+                transform : translate(-50%, 0);
+            }
+
+            body > main > article > form::before, body > main > article > form::after {
+                content          : '';
+                position         : absolute;
+                width            : 35%;
+                height           : 5px;
+                background-color : #2A2D31;
+            }
+
+            body > main > article > form::before {
+                top  : 0;
+                left : 0;
+            }
+
+            body > main > article > form::after {
+                top   : 0;
+                right : 0;
+            }
+
+            body > main > article > form > button {
+                display          : block;
+                text-align       : center;
+                box-shadow       : 0 0 4px rgb(0.51, 0.51, 0.51);
+                padding          : 20px;
+                margin           : 25px auto 20px;
+                cursor           : pointer;
+                outline          : none;
+                width            : 95%;
+                border           : none;
+                background-color : #727A88;
+                font-size        : 20px;
+            }
+
+            body > main > article > form > button:hover {
+                background-color : #F2374D;
+                color            : white;
+            }
+
+            body > main > article > div {
+                content       : '';
+                position      : absolute;
+                top           : 40%;
+                border-left   : 75px double transparent;
+                border-right  : 75px double transparent;
+                border-bottom : 150px solid #F2374D;
+            }
+
+            body > main > article > div:first-of-type {
+                left      : 0;
+                transform : rotate(90deg);
+            }
+
+            body > main > article > div:nth-of-type(2) {
+                right     : 0;
+                transform : rotate(-90deg);
+            }
+
+            body > main > header > span {
+                left : 5%;
+            }
+
+            body > main > header > a > img {
+                left : 5%;
+            }
+
+            body > main > article
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h2> Contact </h2>
+                <a href="../index.html"><img src="../index/logo.png"/></a>
+                <span> HOME </span>
+            </header>
+            <article>
+                <div></div>
+                <div></div>
+                <h3> Let's <br/>Talk ! </h3>
+                <form>
+                    <h3> Formulaire </h3>
+                    <input type="text" name="Prénom" id="firstname"/> <br/>
+                    <label for="firstname"> Prénom </label> <br/>
+                    <input type="text" name="Email" id="mail"/> <br/>
+                    <label for="mail"> Email </label> <br/>
+                    <input type="text" name="Sujet" id="subject"/> <br/>
+                    <label for="subject"> Intitulé </label> <br/>
+                    <textarea type="text" name="Msg" id="message"></textarea> <br/>
+                    <label for="message"> Message </label> <br/>
+                    <label> Votre style de jeu préféré ? <br/>
+                        <select>
+                            <option selected> FPS</option>
+                            <option> Horror</option>
+                            <option> Retro</option>
+                            <option> Stratégy</option>
+                            <option> Tower Defense</option>
+                            <option> Sports</option>
+                            <option> Platform</option>
+                            <option> Cars</option>
+                            <option> MMORPG</option>
+                            <option> Autre</option>
+                        </select>
+                    </label><br/>
+                    <input type="text" name="recommandé" id="recommand"/>
+                    <label for="recommand"> Un jeu à recommander ? </label>
+                    <button> Envoyer </button>
+                </form>
+            </article>
+        </main>
+    </body>
+</html>

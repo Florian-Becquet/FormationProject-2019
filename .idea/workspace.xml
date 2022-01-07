@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="447292fb-f880-4707-8ab4-4ea2fb763097" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/video.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="242" column="118" selection-start-line="242" selection-start-column="118" selection-end-line="242" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/fps.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2323">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="PhP HTML file" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>article</find>
+      <find>span</find>
+      <find>transition</find>
+      <find>Trailer</find>
+      <find>#slideshow_container &gt; div &gt; article &gt; img</find>
+      <find>#slideshow_container &gt; div &gt; article &gt; p</find>
+      <find>#slideshow_container &gt; div &gt; article:hover &gt; button</find>
+      <find>#slideshow_container &gt; div &gt; article &gt; button</find>
+      <find>#slideshow_container &gt; div &gt; article &gt; img {</find>
+      <find>--&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>a</replace>
+      <replace>em</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/galerie/galerie.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/projet.html" />
+        <option value="$PROJECT_DIR$/Horror.html" />
+        <option value="$PROJECT_DIR$/horror.js" />
+        <option value="$PROJECT_DIR$/horror.html" />
+        <option value="$PROJECT_DIR$/FPS.css" />
+        <option value="$PROJECT_DIR$/../www/Exercices/maquetteexo.html" />
+        <option value="$PROJECT_DIR$/towerdefense.html" />
+        <option value="$PROJECT_DIR$/sport.html" />
+        <option value="$PROJECT_DIR$/platform.html" />
+        <option value="$PROJECT_DIR$/RP.html" />
+        <option value="$PROJECT_DIR$/cars.html" />
+        <option value="$PROJECT_DIR$/projet2.html" />
+        <option value="$PROJECT_DIR$/../www/Exercices/Pacman  Pong/pong.js" />
+        <option value="$PROJECT_DIR$/video_1.html" />
+        <option value="$PROJECT_DIR$/gallerie.html" />
+        <option value="$PROJECT_DIR$/retro.html" />
+        <option value="$PROJECT_DIR$/FPS.html" />
+        <option value="$PROJECT_DIR$/galerie.html" />
+        <option value="$PROJECT_DIR$/fps/fps.css" />
+        <option value="$PROJECT_DIR$/fps/style/fps.css" />
+        <option value="$PROJECT_DIR$/rpg/RP.html" />
+        <option value="$PROJECT_DIR$/Parts.css" />
+        <option value="$PROJECT_DIR$/header.css" />
+        <option value="$PROJECT_DIR$/scripts/carousel.js" />
+        <option value="$PROJECT_DIR$/galerie/test.html" />
+        <option value="$PROJECT_DIR$/fps/carousel.js" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/fps/fps.php" />
+        <option value="$PROJECT_DIR$/retro/retro.html" />
+        <option value="$PROJECT_DIR$/styles/fps.css" />
+        <option value="$PROJECT_DIR$/platform/platform.html" />
+        <option value="$PROJECT_DIR$/towerdefense/towerdefense.html" />
+        <option value="$PROJECT_DIR$/scripts/dialog.js" />
+        <option value="$PROJECT_DIR$/styles/header.css" />
+        <option value="$PROJECT_DIR$/styles/parts.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/horror/horror.html" />
+        <option value="$PROJECT_DIR$/fps/fps.html" />
+        <option value="$PROJECT_DIR$/strategy/strategy.html" />
+        <option value="$PROJECT_DIR$/sport/sport.html" />
+        <option value="$PROJECT_DIR$/cars/cars.html" />
+        <option value="$PROJECT_DIR$/rpg/rp.html" />
+        <option value="$PROJECT_DIR$/galerie/galerie.html" />
+        <option value="$PROJECT_DIR$/contact/contact.html" />
+        <option value="$PROJECT_DIR$/video.html" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Projet_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_home" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_home" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercices" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercices" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Liam\Desktop\Projet2home\fps\style" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="447292fb-f880-4707-8ab4-4ea2fb763097" name="Default Changelist" comment="" />
+      <created>1547577462691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547577462691</updated>
+      <workItem from="1547577464712" duration="7085000" />
+      <workItem from="1547668230502" duration="4698000" />
+      <workItem from="1547749633342" duration="13000" />
+      <workItem from="1547749647697" duration="9388000" />
+      <workItem from="1547837454485" duration="8480000" />
+      <workItem from="1547891939795" duration="11940000" />
+      <workItem from="1547915288899" duration="3000" />
+      <workItem from="1547922168254" duration="4661000" />
+      <workItem from="1547980145140" duration="866000" />
+      <workItem from="1548938147772" duration="3036000" />
+      <workItem from="1548955692213" duration="6721000" />
+      <workItem from="1548968104868" duration="55000" />
+      <workItem from="1549477809624" duration="9308000" />
+      <workItem from="1549490232855" duration="333000" />
+      <workItem from="1549561334513" duration="4679000" />
+      <workItem from="1549566044895" duration="122000" />
+      <workItem from="1549570366474" duration="2504000" />
+      <workItem from="1549572925575" duration="485000" />
+      <workItem from="1549614708087" duration="1543000" />
+      <workItem from="1549618831029" duration="14653000" />
+      <workItem from="1549650253935" duration="7645000" />
+      <workItem from="1549658908395" duration="2624000" />
+      <workItem from="1549710455696" duration="12798000" />
+      <workItem from="1549733411621" duration="7966000" />
+      <workItem from="1549799256195" duration="8319000" />
+      <workItem from="1549976294117" duration="397000" />
+      <workItem from="1549976729898" duration="8732000" />
+      <workItem from="1550043975697" duration="1711000" />
+      <workItem from="1550154565202" duration="3158000" />
+      <workItem from="1550481227931" duration="1399000" />
+      <workItem from="1550658921250" duration="38000" />
+      <workItem from="1550839485412" duration="9500000" />
+      <workItem from="1550850326844" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="154867000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10341151" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15100671" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://D:/www/Exercices/js et css exo 8.html" />
+    <entry file="file://D:/www/Exercices/js et css exo 5.html" />
+    <entry file="file://D:/www/Exercices/JS/js-exo7.html" />
+    <entry file="file://D:/www/Exercices/JS/js-obj-1.html" />
+    <entry file="file://$PROJECT_DIR$/horror.js" />
+    <entry file="file://D:/www/Exercices/maquetteexo.html" />
+    <entry file="file://D:/www/Training/css-column-responsive.html" />
+    <entry file="file://D:/www/Training/css-column.html" />
+    <entry file="file://D:/www/Training/CSS/grid.css" />
+    <entry file="file://$PROJECT_DIR$/FPS.css" />
+    <entry file="file://$PROJECT_DIR$/../www/Exercices/maquetteexo.html" />
+    <entry file="file://$PROJECT_DIR$/../www/Training/js-parallax.html" />
+    <entry file="file://$PROJECT_DIR$/towerdefense.html" />
+    <entry file="file://$PROJECT_DIR$/sport.html" />
+    <entry file="file://$PROJECT_DIR$/platform.html" />
+    <entry file="file://$PROJECT_DIR$/RP.html" />
+    <entry file="file://$PROJECT_DIR$/cars.html" />
+    <entry file="file://$PROJECT_DIR$/../www/Exercices/Pacman  Pong/pong.css" />
+    <entry file="file://$PROJECT_DIR$/../www/Exercices/Pacman  Pong/pong.js" />
+    <entry file="file://$PROJECT_DIR$/../www/Exercices/Pacman  Pong/pong.html" />
+    <entry file="file://$PROJECT_DIR$/horror.html" />
+    <entry file="file://$PROJECT_DIR$/../www/Training/menu.html" />
+    <entry file="file://$PROJECT_DIR$/video_1.html" />
+    <entry file="file://$PROJECT_DIR$/FPS.html" />
+    <entry file="file://$PROJECT_DIR$/galerie.html" />
+    <entry file="file://$PROJECT_DIR$/retro.html" />
+    <entry file="file://$PROJECT_DIR$/fps/style/fps.css" />
+    <entry file="file://$PROJECT_DIR$/header.css" />
+    <entry file="file://$PROJECT_DIR$/Parts.css" />
+    <entry file="file://$PROJECT_DIR$/scripts/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/galerie/test.html" />
+    <entry file="file://$PROJECT_DIR$/fps/carousel.js" />
+    <entry file="file://$PROJECT_DIR$/header.php" />
+    <entry file="file://$PROJECT_DIR$/towerdefense/towerdefense.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform/platform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="90" column="23" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+          <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/parts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fps/fps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1587">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/horror/horror.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="197" column="33" lean-forward="true" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/galerie/galerie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="120" column="51" selection-start-line="120" selection-start-column="51" selection-end-line="120" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exercices/martin-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="67" column="22" lean-forward="true" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg/rp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cars/cars.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sport/sport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strategy/strategy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retro/retro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="242" column="118" selection-start-line="242" selection-start-column="118" selection-end-line="242" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/fps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2323">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

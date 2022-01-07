@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Galerie</title>
+        <script src="../scripts/dialog.js" defer></script>
+        <!--<script src="../scripts/carousel.js" defer></script>-->
+        <style>
+            @import '../styles/header.css';
+            @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+            :root {
+                -webkit-user-select : none;
+                -moz-user-select    : none;
+                -ms-user-select     : none;
+                user-select         : none;
+            }
+
+            * {
+                box-sizing : border-box;
+            }
+
+            body {
+                margin    : 0;
+                font-size : 0;
+            }
+
+            body > main {
+                max-width : 100%;
+            }
+
+            body > main > header > span {
+                left : 5%;
+            }
+
+            body > main > header > a > img {
+                left : 5%;
+            }
+
+            /* ----------------------- Containers ----------------------- */
+
+            #slideshow {
+                position         : relative;
+                max-width        : 100%;
+                background-color : #1E2023;
+                height           : calc(100vh - 92px);
+                width            : 100vw;
+            }
+
+            #slideshow_container {
+                overflow    : hidden;
+                width       : 100%;
+                height      : 100%;
+                white-space : nowrap;
+                display     : inline-block;
+            }
+
+            #slideshow_container > div {
+                font-family    : "adelle-sans", "helvetica neue", "helvetica", sans-serif;
+                letter-spacing : 2px;
+                box-sizing     : border-box;
+                width          : 100%;
+                height         : 100%;
+                display        : inline-block;
+                color          : #727A88;
+                letter-spacing : 0;
+                overflow       : hidden;
+            }
+
+            #slideshow_container > div > article {
+                display        : inline-block;
+                vertical-align : top;
+                width          : calc(100% / 3);
+                color          : #727A88;
+                filter         : grayscale(90%);
+                border         : 2px solid #2A2D31;
+                margin         : 0;
+                padding        : 0;
+                height         : 100%;
+                overflow       : hidden;
+            }
+
+            /* -----------------------  Article's Backgrounds ----------------------- */
+
+            @keyframes grayscale {
+                from {
+                    filter : grayscale(80%);
+                }
+
+                20% {
+                    filter : grayscale(70%);
+                }
+
+                40% {
+                    filter : grayscale(60%);
+                }
+
+                60% {
+                    filter : grayscale(40%);
+                }
+
+                80% {
+                    filter : grayscale(20%);
+                }
+
+                to {
+                    filter : grayscale(0%);
+                }
+            }
+
+            #slideshow_container > div > article:hover {
+                animation : 1.5s grayscale forwards;
+            }
+
+            #slideshow_container > div:nth-of-type(3n + 1) > article:first-of-type {
+                background      : url('bgs/metro.jpg');
+                background-size : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(3n + 1) > article:nth-of-type(2) {
+                background-image : url('bgs/anthem2.jpg');
+                background-size  : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(3n + 1) > article:nth-of-type(3) {
+                background      : url('bgs/starcit.jpg');
+                background-size : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(2) > article:first-of-type {
+                background      : url('bgs/division.jpg');
+                background-size : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(2) > article:nth-of-type(2) {
+                background      : url('bgs/sekiro.jpg');
+                background-size : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(2) > article:nth-of-type(3) {
+                background      : url('bgs/di2.jpg');
+                background-size : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(3) > article:first-of-type {
+                background      : url('bgs/tlof.jpg');
+                background-size : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(3) > article:nth-of-type(2) {
+                background      : url('bgs/dl2.jpg');
+                background-size : cover;
+            }
+
+            #slideshow_container > div:nth-of-type(3) > article:nth-of-type(3) {
+                background      : url('bgs/resident2.jpg');
+                background-size : cover;
+            }
+
+            /* -----------------------  Img, h2, button and p ----------------------- */
+
+            #slideshow_container > div > article:hover > img {
+                top : 5%;
+                left       : -50%;
+                transition : 1s;
+            }
+
+            #slideshow_container > div > article > p, #slideshow_container > div > article > button {
+                transform : perspective(300px) rotateX(90deg);
+            }
+
+            #slideshow_container > div > article:hover > p, #slideshow_container > div > article:hover > button {
+                color      : white;
+                top        : 5%;
+                opacity    : 1;
+                transition : 1s;
+                transform  : perspective(300px) rotateX(5deg);
+            }
+
+            #slideshow_container > div > article:hover > h2 {
+                top        : -1%;
+                color      : white;
+                transition : 1s;
+            }
+
+            #slideshow_container > div > article > p {
+                position    : relative;
+                top         : 25%;
+                left        : 10%;
+                font-family : 'Major Mono Display', monospace;
+                color       : #727A8850;
+                opacity     : 0;
+                transition  : .5s;
+                font-size : 24px;
+                letter-spacing: 2px;
+            }
+
+            #slideshow_container > div > article > h2 {
+                position   : relative;
+                top        : 25%;
+                left       : 10%;
+                transition : .5s;
+                font-size : 36px;
+                letter-spacing: 2px;
+            }
+
+            #slideshow_container > div:nth-of-type(2) > article:hover > h2,
+            #slideshow_container > div:nth-of-type(2) > article:hover > p {
+                color : black;
+            }
+
+            /* -----------------------  Slide ----------------------- */
+            /* ----------------------- Containers Upper ----------------------- */
+
+            #slideshow > button {
+                position   : absolute;
+                cursor     : pointer;
+                background : none;
+                border     : none;
+                outline    : none;
+                bottom     : 5%;
+            }
+
+            #slideshow > button > img {
+                width  : 35px;
+                height : 35px;
+            }
+
+            #slideshow > button:first-of-type {
+                left    : 10px;
+                z-index : 1;
+            }
+
+            #slideshow > button:last-of-type {
+                right   : 10px;
+                z-index : 1;
+            }
+
+            #slideshow_container > div > article > img {
+                width      : 125px;
+                height     : 125px;
+                position   : relative;
+                left       : 20%;
+                transform  : translate(-50%, -110%);
+                z-index    : 0;
+                transition : .5s;
+            }
+
+            .smooth {
+                scroll-behavior : smooth;
+            }
+
+            #slideshow_container > div > article > button {
+                position         : relative;
+
+                left             : -16%;
+                width            : 150px;
+                height           : 50px;
+                font-size        : 25px;
+                color            : #727A88 !important;
+                background-color : #CCC;
+                border           : none;
+                outline          : none;
+                box-shadow       : 0 4px 4px rgb(0.51, 0.51, 0.51);
+                border-radius    : 5%;
+                cursor           : pointer;
+                opacity          : 0;
+                transition       : .5s;
+                z-index          : 1;
+                filter           : none;
+            }
+
+            #slideshow_container > div > article > button:hover {
+                color           : #F2374D !important;
+                text-decoration : underline;
+            }
+
+            /* -----------------------  Dialog open ----------------------- */
+
+            dialog {
+                position         : fixed;
+                top              : 0;
+                left             : 0;
+                display          : block;
+                width            : 100%;
+                height           : 100%;
+                overflow         : hidden;
+                max-width        : 0;
+                max-height       : 0;
+                background-color : rgba(0, 0, 0, .5);
+                opacity          : 0;
+                transition       : opacity .4s, max-width 0s .4s, max-height 0s .4s;
+            }
+
+            dialog.open {
+                transition : opacity .4s;
+                opacity    : 1;
+                max-width  : 100%;
+                max-height : 100%;
+                z-index    : 1;
+            }
+
+            dialog > iframe {
+                position  : absolute;
+                top       : 50%;
+                left      : 50%;
+                transform : translate(-50%, -50%);
+                border    : 2px solid white;
+                width     : 40%;
+                height    : 45%;
+            }
+
+            div, section {
+                font-size      : 0;
+                letter-spacing : 0;
+            }
+
+            .img_bg {
+                position : absolute;
+                top      : 0;
+                left     : 0;
+                height   : 100%;
+                width    : 100%;
+                z-index  : -1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h2> Jeux attendus de 2019 </h2>
+                <a href="../index.html"><img src="../index/logo.png"/></a>
+                <span> HOME </span>
+            </header>
+
+            <article id="slideshow">
+                <button id="btn_slideshow_previous"><img src="gauche.svg" alt=""/></button>
+                <section id="slideshow_container" class="smooth">
+                    <div>
+                        <article>
+                            <p> 01 </p><br/>
+                            <h2> Métro Éxodus </h2>
+                            <img src="logos/metrologo.png" alt="Métro Exodus"/>
+                            <button id="btn_dialog_video_metro">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 02 </p><br/>
+                            <h2> Anthem </h2>
+                            <img src="logos/anthemlogo.png" alt="Anthem"/>
+                            <button id="btn_dialog_video_anthem">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 03 </p><br/>
+                            <h2> Star Citizen </h2>
+                            <img src="logos/starcitlogo.png" alt="Star Citizen"/>
+                            <button id="btn_dialog_video_starcit">Trailer</button>
+                        </article>
+                    </div>
+                    <div>
+                        <article>
+                            <p> 04 </p><br/>
+                            <h2> Division 2 </h2>
+                            <img src="logos/divisionlogo.png" alt="Division 2"/>
+                            <button id="btn_dialog_video_division">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 05 </p><br/>
+                            <h2> Sekiro </h2>
+                            <img src="logos/sekirologo.png" alt="Sekiro"/>
+                            <button id="btn_dialog_video_sekiro">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 06 </p><br/>
+                            <h2> Dead Island 2 </h2>
+                            <img src="logos/di2logo.png" alt="Dead Island 2"/>
+                            <button id="btn_dialog_video_di2">Trailer</button>
+                        </article>
+                    </div>
+                    <div>
+                        <article>
+                            <p> 07 </p><br/>
+                            <h2> The Last of Us </h2>
+                            <img src="logos/tloflogo.png" alt="The Last of Us"/>
+                            <button id="btn_dialog_video_tlof">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 08 </p><br/>
+                            <h2> Dying Light 2 </h2>
+                            <img src="logos/dl2logo.png" alt="Dying Light 2"/>
+                            <button id="btn_dialog_video_dl2">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 09 </p><br/>
+                            <h2> Resident Evil 2 </h2>
+                            <img src="logos/resident2logo.png" alt="Resident Evil 2"/>
+                            <button id="btn_dialog_video_resident">Trailer</button>
+                        </article>
+                    </div>
+                    <div>
+                        <article id="article_transition">
+                            <p> 01 </p><br/>
+                            <h2> Métro Éxodus </h2>
+                            <img src="logos/metrologo.png" alt="Métro Exodus"/>
+                            <button id="btn_dialog_video_metro2">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 02 </p><br/>
+                            <h2> Anthem </h2>
+                            <img src="logos/anthemlogo.png" alt="Anthem"/>
+                            <button id="btn_dialog_video_anthem2">Trailer</button>
+                        </article>
+                        <article>
+                            <p> 03 </p><br/>
+                            <h2> Star Citizen </h2>
+                            <img src="logos/starcitlogo.png" alt="Star Citizen"/>
+                            <button id="btn_dialog_video_starcit2">Trailer</button>
+                        </article>
+                    </div>
+                </section>
+                <button id="btn_slideshow_next"><img src="droite.svg" alt=""/></button>
+            </article>
+
+            <dialog id="dialog_iframe_metro">
+                <iframe src="https://www.youtube.com/embed/Yt67BHd-oRA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_anthem">
+                <iframe src="https://www.youtube.com/embed/ZFwylDNpgFc" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_starcit">
+                <iframe src="https://www.youtube.com/embed/zMSGlZSL0DE" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_division">
+                <iframe src="https://www.youtube.com/embed/sli7AbX2bEk" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_sekiro">
+                <iframe src="https://www.youtube.com/embed/4OgoTZXPACo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_di2">
+                <iframe src="https://www.youtube.com/embed/2tLyp04KAN8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_tlof">
+                <iframe src="https://www.youtube.com/embed/qPNiIeKMHyg" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_dl2">
+                <iframe src="https://www.youtube.com/embed/KRScQU_bS1s" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_resident">
+                <iframe src="https://www.youtube.com/embed/sVB_XudMgoA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_metro2">
+                <iframe src="https://www.youtube.com/embed/Yt67BHd-oRA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_anthem2">
+                <iframe src="https://www.youtube.com/embed/ZFwylDNpgFc" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+            <dialog id="dialog_iframe_starcit2">
+                <iframe src="https://www.youtube.com/embed/zMSGlZSL0DE" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </dialog>
+
+            <script>
+                /* global btn_slideshow_previous, slideshow_container, slideshow, btn_slideshow_next, nav_slideshow */
+
+                let current_slide = 0;
+
+                btn_slideshow_previous.addEventListener('click', function () {
+                    if (current_slide === 0) {
+                        current_slide = slideshow_container.children.length - 1;
+                        slideshow_container.classList.remove('smooth');
+                        slideshow_container.scrollLeft = current_slide * slideshow_container.getBoundingClientRect().width;
+                        slideshow_container.classList.add('smooth');
+                    }
+                    current_slide = Math.max(0, --current_slide);
+                    slideshow_container.scrollLeft = current_slide * slideshow_container.getBoundingClientRect().width;
+                    console.log(current_slide);
+
+                });
+
+                btn_slideshow_next.addEventListener('click', function () {
+                    if (Math.round(slideshow_container.scrollLeft / slideshow_container.getBoundingClientRect().width) === slideshow_container.children.length - 1) {
+                        current_slide = 0;
+                        slideshow_container.classList.remove('smooth');
+                        slideshow_container.scrollLeft = 0;
+                        slideshow_container.classList.add('smooth');
+                    }
+                    current_slide = Math.min(slideshow_container.children.length, ++current_slide);
+                    slideshow_container.scrollLeft = current_slide * slideshow_container.getBoundingClientRect().width;
+                    console.log(current_slide);
+
+                });
+
+                const slideshow_play = function () {
+                    btn_slideshow_next.dispatchEvent(new MouseEvent('click'));
+                };
+            </script>
+        </main>
+    </body>
+</html>

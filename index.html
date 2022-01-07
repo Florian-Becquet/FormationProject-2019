@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Projet </title>
+
+        <style>
+            :root {
+                -webkit-user-select : none;
+                -moz-user-select    : none;
+                -ms-user-select     : none;
+                user-select         : none;
+            }
+
+            * {
+                box-sizing : border-box;
+            }
+
+            body {
+                margin         : auto;
+                font-size      : 0;
+                font-family    : "adelle-sans", "helvetica neue", "helvetica", sans-serif;
+                letter-spacing : 2px;
+                /*max-width : 1240px;*/
+            }
+
+            /* Navigation */
+
+            body > nav {
+                position         : fixed;
+                max-width        : 100vw;
+                width : 100vw;
+                line-height      : 85px;
+                background-color : #1E2023;
+                border-bottom    : 2px solid #2A2D31;
+                box-shadow       : 0 5px 10px rgba(0, 0, 0, 0.75);
+                z-index          : 1;
+            }
+
+            body > nav > img {
+                position : absolute;
+                left     : 5%;
+                top      : 5%;
+                width    : 75px;
+                height   : 75px;
+            }
+
+            body > nav > ul {
+                position : relative;
+                left     : 50%;
+                margin   : 0;
+                padding  : 0;
+            }
+
+            body > nav > ul > li {
+                position       : relative;
+                list-style     : none;
+                display        : inline-block;
+                padding        : 0 20px;
+                text-transform : uppercase;
+                vertical-align : top;
+            }
+
+            body > nav > ul > li > a {
+                text-decoration : none;
+                color           : #727A88;
+                font-size       : 14px;
+                padding         : 36px 15px ;
+            }
+
+            body > nav > ul > li > a:hover {
+                color      : #727A8855;
+                text-shadow: 5px 5px #117A65;
+                box-shadow : -4px 4px 4px rgb(0.51, 0.51, 0.51);
+                transition : color .4s, box-shadow 1.5s, text-shadow 1s, background-color 1s;
+                background-color : #2A2D31;
+            }
+
+            /* Début du main */
+
+            body > main > section {
+                position         : relative;
+                display          : flex;
+                text-align       : center;
+                top              : 90px;
+                background-color : #1E2023;
+            }
+
+            body > main > section > a {
+                color    : #303437;
+                height   : 380px;
+                border   : 2px solid #2A2D31;
+                position : relative;
+            }
+
+            body > main > section > a > img {
+                position  : absolute;
+                top       : 50%;
+                left      : 50%;
+                width     : 20vmin;  /* 150px * 150px de base */
+                height    : 15vmin;
+                transform : translate(-50%, -50%);
+            }
+
+            body > main > section > a:hover {
+                transition : .6s;
+            }
+
+            .large_img {
+                width : 50%;
+            }
+
+            .small_img {
+                width : 25%;
+            }
+
+            body > main > section:first-of-type > a:first-of-type:hover {
+                background-color : #F9CA02;
+            }
+
+            body > main > section:first-of-type > a:nth-of-type(2):hover {
+                background-color : #F2374D;
+            }
+
+            body > main > section:first-of-type > a:nth-of-type(3):hover {
+                background-color : #00A86E;
+            }
+
+            body > main > section:nth-of-type(2) > a:first-of-type:hover {
+                background-color : #4C3770;
+            }
+
+            body > main > section:nth-of-type(2) > a:nth-of-type(2):hover {
+                background-color : #2EC9A9;
+            }
+
+            body > main > section:nth-of-type(2) > a:nth-of-type(3):hover {
+                background-color : #77BC1F;
+            }
+
+            body > main > section:nth-of-type(3) > a:first-of-type:hover {
+                background-color : #164B78;
+            }
+
+            body > main > section:nth-of-type(3) > a:nth-of-type(2):hover {
+                background-color : #117A65;
+            }
+
+            body > main > section:nth-of-type(3) > a:nth-of-type(3):hover {
+                background-color : #FF7F48;
+            }
+
+            /* Texte à l'intérieur de l'image */
+
+            body > main > section > a > span {
+                visibility : hidden;
+            }
+
+            body > main > section > a:hover > span {
+                visibility : visible;
+            }
+
+            body > main > section > a > span {
+                position  : absolute;
+                bottom    : 15%;
+                font-size : 24px;
+                left      : 50%;
+                transform : translate(-50%);
+            }
+
+            body > main > section > a:hover > img {
+                width      : 22vmin;   /* 175 px * 175 px de base */
+                height     : 17vmin;
+                transition : .4s;
+            }
+
+            /* nav déroulant */
+
+            body > nav > ul > li > ul {
+                display : none;
+            }
+
+            body > nav > ul > li:hover > ul {
+                /*display : block;*/
+            }
+
+            body > nav > ul > li > ul {
+                list-style    : none;
+                position      : absolute;
+                font-size     : 16px;
+                line-height   : 35px;
+                left          : 0;
+                white-space   : nowrap;
+                margin        : 0;
+                padding       : 5px 20px;
+                border-bottom : 2px solid #2A2D31;
+                box-shadow    : 0 5px 10px rgba(0, 0, 0, 0.75);
+            }
+
+            body > nav > ul > li > ul > li:hover > a {
+                color      : #A9AEB7;
+                transition : .4s;
+            }
+
+            body > nav > ul > li > ul > li > a {
+                text-decoration : none;
+                color           : #727A88;
+                font-size       : 14px;
+            }
+
+            body > nav > span {
+                font-size : 24px;
+                opacity   : 0.25;
+                color     : #727A88;
+                position  : absolute;
+                left      : 5%;
+                top       : 35%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <img src="index/logo.png"/>
+            <span> HOME </span>
+            <ul>
+                <li><a href="galerie/galerie.html"> Galerie </a></li>
+                <li><a href="video.html"> Vidéos </a>
+                    <ul>
+                        <li><a href="#"> Vidéo 1 </a></li>
+                        <li><a href="#"> Vidéo 2 </a></li>
+                        <li><a href="#"> Vidéo 3 </a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Autres </a></li>
+                <li><a href="#"> À-propos </a></li>
+                <li><a href="contact/contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <a class="large_img" href="fps/fps.html">
+                    <img src="index/fps.svg"/>
+                    <span> First-Person Shooter </span>
+                </a>
+                <a class="small_img" href="horror/horror.html">
+                    <img src="index/horror.svg"/>
+                    <span> Horror Games </span>
+                </a>
+                <a class="small_img" href="retro/retro.html">
+                    <img src="index/retro.svg"/>
+                    <span> RetroGaming </span>
+                </a>
+            </section>
+
+            <section>
+                <a class="small_img" href="strategy/strategy.html">
+                    <img src="index/chess.svg"/>
+                    <span> StrategyGames </span>
+                </a>
+                <a class="small_img" href="towerdefense/towerdefense.html">
+                    <img src="index/tower.svg"/>
+                    <span> Tower Defense </span>
+                </a>
+                <a class="large_img" href="sport/sport.html">
+                    <img src="index/sport.svg"/>
+                    <span> Sport Games </span>
+                </a>
+            </section>
+
+            <section>
+                <a class="large_img" href="platform/platform.html">
+                    <img src="index/platform.svg"/>
+                    <span> Platform Games </span>
+                </a>
+                <a class="small_img" href="cars/cars.html">
+                    <img src="index/car.svg"/>
+                    <span> Racing Games </span>
+                </a>
+                <a class="small_img" href="rpg/rp.html">
+                    <img src="index/rp.svg"/>
+                    <span> RoleplayGames </span>
+                </a>
+            </section>
+        </main>
+    </body>
+</html>
